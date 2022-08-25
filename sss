@@ -1,0 +1,765 @@
+
+local Window = OrionLib:MakeWindow({Name = "Sina Hub|Bakon [EVENT 🛸]", HidePremium = false, IntroText = "Sina Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "Bakon GUI",
+	Content = "Reset=Starting, Welcome To Sina Hub",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+
+ 
+
+local Tab = Window:MakeTab({
+	Name = "LocalPlayer",
+	Icon = "rbxassetid://7204839398",
+	PremiumOnly = false
+})
+
+
+
+
+Tab:AddSlider({
+	Name = "WalkSpeed",
+	Min = 16,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "WalkSpeed",
+	Callback = function(Value)
+		 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+	end    
+})
+
+
+Tab:AddSlider({
+	Name = "JumpPower",
+	Min = 30,
+	Max = 500,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "JumpPower",
+	Callback = function(Value)
+		 game.Players.LocalPlayer.Character.Humanoid.JumpPower = (Value)
+	end    
+})
+
+
+
+
+Tab:AddButton({
+
+	Name = "🛠️Btools🛠️",
+	Callback = function()
+local tool1 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool3 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+local tool5 = Instance.new("HopperBin",game.Players.LocalPlayer.Backpack)
+tool1.BinType = "Clone"
+tool3.BinType = "Hammer"
+tool5.BinType = "Grab"
+	end
+
+
+})
+
+Tab:AddButton({
+
+	Name = "Dex Explorer V2",
+	Callback = function()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+	end
+
+
+})
+
+Tab:AddButton({
+	Name = "Dex Explorer V4",
+	Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/SpaceSpiffer/Scripts/main/Script5", true))()
+end
+})
+
+
+
+
+Tab:AddButton({
+	Name = "Infinite Yield Admin",
+	Callback = function()
+	loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
+end
+})
+
+
+
+
+
+
+
+
+local Farms= Window:MakeTab({
+	Name = "Auto Farm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+Farms:AddLabel("Auto Farm")
+
+Farms:AddLabel("If Off Is Bug then 👇")
+
+
+
+Farms:AddButton({
+
+	Name = "Stop Farm Fix (Rejoin)",
+	Callback = function()
+    local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ 
+
+ts:Teleport(game.PlaceId, p)
+	end
+
+
+})
+
+
+local Section = Farms:AddSection({
+	Name = "Multi"
+})
+
+
+Farms:AddToggle({
+	Name = "Multi Farm",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+
+		while true do
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(539.735535, 16.0355186, -401.036957, 0.0257705692, -9.52443742e-08, -0.999667883, -4.22824691e-08, 1, -9.63660227e-08, 0.999667883, 4.47518325e-08, 0.0257705692)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(542.009521, 15.9995508, -401.095673, 0.0257710461, -4.92774266e-09, -0.999667883, -2.1876978e-09, 1, -4.98577801e-09, 0.999667883, 2.31546005e-09, 0.0257710461)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(543.584717, 15.9995508, -401.117096, 0.0431915708, -5.83758464e-08, -0.99906683, -1.11293668e-08, 1, -5.89115174e-08, 0.99906683, 1.36634624e-08, 0.0431915708)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(545.593872, 15.9995508, -400.999603, 0.00829338934, 2.559878e-08, -0.999965608, -2.72869531e-08, 1, 2.53733514e-08, 0.999965608, 2.70755844e-08, 0.00829338934)
+       	wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(547.996765, 15.9995508, -401.264954, -0.0615469962, -4.52663294e-08, -0.998104215, -2.0298371e-08, 1, -4.41006307e-08, 0.998104215, 1.75456289e-08, -0.0615469962)
+       	wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(549.990479, 15.9995508, -401.065094, 0.0168865006, -6.80622714e-09, -0.999857426, -3.60191599e-10, 1, -6.81328105e-09, 0.999857426, 4.75192719e-10, 0.0168865006)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(551.827576, 15.9995508, -401.096039, -0.0616319366, -6.62826736e-08, -0.998098969, -2.69230203e-08, 1, -6.47464447e-08, 0.998098969, 2.28813892e-08, -0.0616319366)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(553.925659, 15.9995508, -401.039825, -0.0267685894, -7.79915084e-08, -0.999641657, -3.25504992e-08, 1, -7.71478241e-08, 0.999641657, 3.04736965e-08, -0.0267685894)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(555.762329, 15.9995508, -401.1409, 0.0255593769, -3.38008306e-08, -0.999673307, -9.45388834e-09, 1, -3.40535919e-08, 0.999673307, 1.03211883e-08, 0.0255593769)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(558.122864, 15.9995508, -401.185852, 0.0603943951, -2.59569912e-08, -0.998174608, 1.18075164e-07, 1, -1.88603426e-08, 0.998174608, -1.16720564e-07, 0.0603943951)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(560.1698, 15.9995527, -401.000763, -0.0616622977, 9.29008621e-08, -0.998097062, -2.09124038e-10, 1, 9.30908968e-08, 0.998097062, 5.94892491e-09, -0.0616622977)
+        wait(0.2)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(561.825806, 15.9995527, -400.970764, -0.0477017127, -1.86173601e-08, -0.998861611, -6.05193229e-09, 1, -1.83495619e-08, 0.998861611, 5.16973753e-09, -0.0477017127)
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(563.574707, 15.9995508, -401.030731, -0.00217322353, -6.18378593e-08, -0.999997616, 6.366633e-09, 1, -6.18518428e-08, 0.999997616, -6.50103615e-09, -0.00217322353)
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(566.018005, 15.9995508, -401.151764, 0.0223046467, 4.14199484e-08, -0.99975121, 9.04616648e-09, 1, 4.16320773e-08, 0.99975121, -9.97250549e-09, 0.0223046467)
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(567.591492, 15.9995508, -401.219604, 0.0331292674, -1.77501693e-08, -0.999451101, 3.40590951e-08, 1, -1.66309455e-08, 0.999451101, -3.34894281e-08, 0.0331292674)
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(569.863464, 15.9995508, -401.118896, -0.044256255, -3.81185927e-08, -0.999020219, 6.15300095e-08, 1, -4.08817336e-08, 0.999020219, -6.32789963e-08, -0.044256255)
+        wait(0.5)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(572.054199, 15.9995508, -401.127441, -0.0443308242, 3.98163529e-08, -0.999016881, 4.92093477e-08, 1, 3.76718958e-08, 0.999016881, -4.74909427e-08, -0.0443308242)
+        wait(0.7)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(574.239685, 15.999547, -401.087036, -0.0264866054, 6.53352998e-08, -0.999649167, -6.30747365e-08, 1, 6.7029454e-08, 0.999649167, 6.48279936e-08, -0.0264866054)
+   
+   
+    end 
+
+else
+
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end
+end    
+})
+
+local Section = Farms:AddSection({
+	Name = "Rebirth"
+})
+
+Farms:AddToggle({
+	Name = "Rebirth Farm",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+
+			 while true do
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(539.735535, 16.0355186, -401.036957, 0.0257705692, -9.52443742e-08, -0.999667883, -4.22824691e-08, 1, -9.63660227e-08, 0.999667883, 4.47518325e-08, 0.0257705692)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(542.009521, 15.9995508, -401.095673, 0.0257710461, -4.92774266e-09, -0.999667883, -2.1876978e-09, 1, -4.98577801e-09, 0.999667883, 2.31546005e-09, 0.0257710461)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(543.584717, 15.9995508, -401.117096, 0.0431915708, -5.83758464e-08, -0.99906683, -1.11293668e-08, 1, -5.89115174e-08, 0.99906683, 1.36634624e-08, 0.0431915708)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(545.593872, 15.9995508, -400.999603, 0.00829338934, 2.559878e-08, -0.999965608, -2.72869531e-08, 1, 2.53733514e-08, 0.999965608, 2.70755844e-08, 0.00829338934)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(547.996765, 15.9995508, -401.264954, -0.0615469962, -4.52663294e-08, -0.998104215, -2.0298371e-08, 1, -4.41006307e-08, 0.998104215, 1.75456289e-08, -0.0615469962)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(549.990479, 15.9995508, -401.065094, 0.0168865006, -6.80622714e-09, -0.999857426, -3.60191599e-10, 1, -6.81328105e-09, 0.999857426, 4.75192719e-10, 0.0168865006)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(551.827576, 15.9995508, -401.096039, -0.0616319366, -6.62826736e-08, -0.998098969, -2.69230203e-08, 1, -6.47464447e-08, 0.998098969, 2.28813892e-08, -0.0616319366)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(553.925659, 15.9995508, -401.039825, -0.0267685894, -7.79915084e-08, -0.999641657, -3.25504992e-08, 1, -7.71478241e-08, 0.999641657, 3.04736965e-08, -0.0267685894)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(555.762329, 15.9995508, -401.1409, 0.0255593769, -3.38008306e-08, -0.999673307, -9.45388834e-09, 1, -3.40535919e-08, 0.999673307, 1.03211883e-08, 0.0255593769)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-584.098694, -33.5398941, -790.030823, 0.9995839, -8.18823942e-09, -0.028844459, 6.1261729e-09, 1, -7.15775457e-08, 0.028844459, 7.13710548e-08, 0.9995839)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-579.846313, -33.4783249, -790.45575, 0.998628438, 1.07651958e-08, -0.0523571409, -1.02785016e-08, 1, 9.56492574e-09, 0.0523571409, -9.01365382e-09, 0.998628438)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-576.338196, -33.4783249, -790.768738, 0.999962091, -7.6095491e-10, 0.00870798156, 5.24863042e-10, 1, 2.7114412e-08, -0.00870798156, -2.71088147e-08, 0.999962091)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-572.858276, -33.4783249, -790.798584, 0.996915281, -3.22584697e-08, -0.0784853026, 2.57610626e-08, 1, -8.37975307e-08, 0.0784853026, 8.15171717e-08, 0.996915281)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-569.380371, -33.4939194, -790.529053, 1, -3.08257526e-08, -1.80162333e-05, 3.0823692e-08, 1, -1.14315156e-07, 1.80162333e-05, 1.14314595e-07, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-565.098206, -33.4783249, -790.529053, 1, 1.01013709e-09, -1.80162333e-05, -1.01006958e-09, 1, 3.74595777e-09, 1.80162333e-05, -3.74593956e-09, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-561.524109, -33.4783249, -790.529053, 1, -2.78409615e-08, -1.80162333e-05, 2.78391017e-08, 1, -1.03244751e-07, 1.80162333e-05, 1.03244247e-07, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-557.78363, -28.5025578, -790.114014, 0.999961495, -3.20367164e-08, -0.00877411943, 3.25173524e-08, 1, 5.4636331e-08, 0.00877411943, -5.49195391e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-553.968018, -28.5025578, -790.079895, 0.999961495, 1.7313214e-08, -0.00877411943, -1.75729049e-08, 1, -2.95202902e-08, 0.00877411943, 2.96733393e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-553.968018, -28.5025578, -790.079895, 0.999961495, 4.9508543e-08, -0.00877411943, -5.02511455e-08, 1, -8.44152126e-08, 0.00877411943, 8.48528714e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-546.709778, -28.4783134, -790.946594, 0.996924758, -2.42664555e-09, 0.078364566, 1.11142129e-09, 1, 1.68270198e-08, -0.078364566, -1.6688178e-08, 0.996924758)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-542.972961, -28.5025578, -790.27887, 0.999045134, 5.7619548e-11, -0.0436902903, 4.60932847e-09, 1, 1.06718147e-07, 0.0436902903, -1.0681763e-07, 0.999045134)
+
+    
+    end 
+
+else
+
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end
+end    
+})
+
+
+
+local Section = Farms:AddSection({
+	Name = "Super Rebirth"
+})
+
+Farms:AddToggle({
+	Name = "Super Rebirth Farm",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+
+	    while true do
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+     	wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(539.735535, 16.0355186, -401.036957, 0.0257705692, -9.52443742e-08, -0.999667883, -4.22824691e-08, 1, -9.63660227e-08, 0.999667883, 4.47518325e-08, 0.0257705692)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(542.009521, 15.9995508, -401.095673, 0.0257710461, -4.92774266e-09, -0.999667883, -2.1876978e-09, 1, -4.98577801e-09, 0.999667883, 2.31546005e-09, 0.0257710461)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(543.584717, 15.9995508, -401.117096, 0.0431915708, -5.83758464e-08, -0.99906683, -1.11293668e-08, 1, -5.89115174e-08, 0.99906683, 1.36634624e-08, 0.0431915708)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(545.593872, 15.9995508, -400.999603, 0.00829338934, 2.559878e-08, -0.999965608, -2.72869531e-08, 1, 2.53733514e-08, 0.999965608, 2.70755844e-08, 0.00829338934)
+       	wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(547.996765, 15.9995508, -401.264954, -0.0615469962, -4.52663294e-08, -0.998104215, -2.0298371e-08, 1, -4.41006307e-08, 0.998104215, 1.75456289e-08, -0.0615469962)
+       	wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(549.990479, 15.9995508, -401.065094, 0.0168865006, -6.80622714e-09, -0.999857426, -3.60191599e-10, 1, -6.81328105e-09, 0.999857426, 4.75192719e-10, 0.0168865006)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(551.827576, 15.9995508, -401.096039, -0.0616319366, -6.62826736e-08, -0.998098969, -2.69230203e-08, 1, -6.47464447e-08, 0.998098969, 2.28813892e-08, -0.0616319366)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(553.925659, 15.9995508, -401.039825, -0.0267685894, -7.79915084e-08, -0.999641657, -3.25504992e-08, 1, -7.71478241e-08, 0.999641657, 3.04736965e-08, -0.0267685894)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(555.762329, 15.9995508, -401.1409, 0.0255593769, -3.38008306e-08, -0.999673307, -9.45388834e-09, 1, -3.40535919e-08, 0.999673307, 1.03211883e-08, 0.0255593769)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(558.122864, 15.9995508, -401.185852, 0.0603943951, -2.59569912e-08, -0.998174608, 1.18075164e-07, 1, -1.88603426e-08, 0.998174608, -1.16720564e-07, 0.0603943951)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(560.1698, 15.9995527, -401.000763, -0.0616622977, 9.29008621e-08, -0.998097062, -2.09124038e-10, 1, 9.30908968e-08, 0.998097062, 5.94892491e-09, -0.0616622977)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(561.825806, 15.9995527, -400.970764, -0.0477017127, -1.86173601e-08, -0.998861611, -6.05193229e-09, 1, -1.83495619e-08, 0.998861611, 5.16973753e-09, -0.0477017127)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(563.574707, 15.9995508, -401.030731, -0.00217322353, -6.18378593e-08, -0.999997616, 6.366633e-09, 1, -6.18518428e-08, 0.999997616, -6.50103615e-09, -0.00217322353)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(566.018005, 15.9995508, -401.151764, 0.0223046467, 4.14199484e-08, -0.99975121, 9.04616648e-09, 1, 4.16320773e-08, 0.99975121, -9.97250549e-09, 0.0223046467)
+        wait(0.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-584.139221, -33.5393982, -790.2547, 0.997566521, -1.73730341e-09, 0.0697207302, 4.17978585e-09, 1, -3.48864866e-08, -0.0697207302, 3.50930094e-08, 0.997566521)
+		wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-576.338196, -33.4783249, -790.768738, 0.999962091, -7.6095491e-10, 0.00870798156, 5.24863042e-10, 1, 2.7114412e-08, -0.00870798156, -2.71088147e-08, 0.999962091)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-572.858276, -33.4783249, -790.798584, 0.996915281, -3.22584697e-08, -0.0784853026, 2.57610626e-08, 1, -8.37975307e-08, 0.0784853026, 8.15171717e-08, 0.996915281)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-569.380371, -33.4939194, -790.529053, 1, -3.08257526e-08, -1.80162333e-05, 3.0823692e-08, 1, -1.14315156e-07, 1.80162333e-05, 1.14314595e-07, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-565.098206, -33.4783249, -790.529053, 1, 1.01013709e-09, -1.80162333e-05, -1.01006958e-09, 1, 3.74595777e-09, 1.80162333e-05, -3.74593956e-09, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-561.524109, -33.4783249, -790.529053, 1, -2.78409615e-08, -1.80162333e-05, 2.78391017e-08, 1, -1.03244751e-07, 1.80162333e-05, 1.03244247e-07, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-557.78363, -28.5025578, -790.114014, 0.999961495, -3.20367164e-08, -0.00877411943, 3.25173524e-08, 1, 5.4636331e-08, 0.00877411943, -5.49195391e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-553.968018, -28.5025578, -790.079895, 0.999961495, 1.7313214e-08, -0.00877411943, -1.75729049e-08, 1, -2.95202902e-08, 0.00877411943, 2.96733393e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-553.968018, -28.5025578, -790.079895, 0.999961495, 4.9508543e-08, -0.00877411943, -5.02511455e-08, 1, -8.44152126e-08, 0.00877411943, 8.48528714e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-546.709778, -28.4783134, -790.946594, 0.996924758, -2.42664555e-09, 0.078364566, 1.11142129e-09, 1, 1.68270198e-08, -0.078364566, -1.6688178e-08, 0.996924758)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-542.972961, -28.5025578, -790.27887, 0.999045134, 5.7619548e-11, -0.0436902903, 4.60932847e-09, 1, 1.06718147e-07, 0.0436902903, -1.0681763e-07, 0.999045134)
+
+		wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.257, 16.0827, -359.66)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.279541, 16.2249069, -365.342407, 0.998309791, -4.08107725e-09, -0.0581171513, 9.91166704e-09, 1, 1.00036509e-07, 0.0581171513, -1.00443458e-07, 0.998309791)
+        
+    end 
+
+else
+
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end
+end    
+})
+
+local Section = Farms:AddSection({
+	Name = "Mega Rebirth"
+})
+
+Farms:AddToggle({
+	Name = "Mega Rebirth Farm",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+
+
+		 while true do
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.001)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(539.735535, 16.0355186, -401.036957, 0.0257705692, -9.52443742e-08, -0.999667883, -4.22824691e-08, 1, -9.63660227e-08, 0.999667883, 4.47518325e-08, 0.0257705692)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(542.009521, 15.9995508, -401.095673, 0.0257710461, -4.92774266e-09, -0.999667883, -2.1876978e-09, 1, -4.98577801e-09, 0.999667883, 2.31546005e-09, 0.0257710461)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(543.584717, 15.9995508, -401.117096, 0.0431915708, -5.83758464e-08, -0.99906683, -1.11293668e-08, 1, -5.89115174e-08, 0.99906683, 1.36634624e-08, 0.0431915708)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(545.593872, 15.9995508, -400.999603, 0.00829338934, 2.559878e-08, -0.999965608, -2.72869531e-08, 1, 2.53733514e-08, 0.999965608, 2.70755844e-08, 0.00829338934)
+       	wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(547.996765, 15.9995508, -401.264954, -0.0615469962, -4.52663294e-08, -0.998104215, -2.0298371e-08, 1, -4.41006307e-08, 0.998104215, 1.75456289e-08, -0.0615469962)
+       	wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(549.990479, 15.9995508, -401.065094, 0.0168865006, -6.80622714e-09, -0.999857426, -3.60191599e-10, 1, -6.81328105e-09, 0.999857426, 4.75192719e-10, 0.0168865006)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(551.827576, 15.9995508, -401.096039, -0.0616319366, -6.62826736e-08, -0.998098969, -2.69230203e-08, 1, -6.47464447e-08, 0.998098969, 2.28813892e-08, -0.0616319366)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(553.925659, 15.9995508, -401.039825, -0.0267685894, -7.79915084e-08, -0.999641657, -3.25504992e-08, 1, -7.71478241e-08, 0.999641657, 3.04736965e-08, -0.0267685894)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(555.762329, 15.9995508, -401.1409, 0.0255593769, -3.38008306e-08, -0.999673307, -9.45388834e-09, 1, -3.40535919e-08, 0.999673307, 1.03211883e-08, 0.0255593769)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(558.122864, 15.9995508, -401.185852, 0.0603943951, -2.59569912e-08, -0.998174608, 1.18075164e-07, 1, -1.88603426e-08, 0.998174608, -1.16720564e-07, 0.0603943951)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(560.1698, 15.9995527, -401.000763, -0.0616622977, 9.29008621e-08, -0.998097062, -2.09124038e-10, 1, 9.30908968e-08, 0.998097062, 5.94892491e-09, -0.0616622977)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(561.825806, 15.9995527, -400.970764, -0.0477017127, -1.86173601e-08, -0.998861611, -6.05193229e-09, 1, -1.83495619e-08, 0.998861611, 5.16973753e-09, -0.0477017127)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(563.574707, 15.9995508, -401.030731, -0.00217322353, -6.18378593e-08, -0.999997616, 6.366633e-09, 1, -6.18518428e-08, 0.999997616, -6.50103615e-09, -0.00217322353)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(566.018005, 15.9995508, -401.151764, 0.0223046467, 4.14199484e-08, -0.99975121, 9.04616648e-09, 1, 4.16320773e-08, 0.99975121, -9.97250549e-09, 0.0223046467)
+        wait(0.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(553.925659, 15.9995508, -401.039825, -0.0267685894, -7.79915084e-08, -0.999641657, -3.25504992e-08, 1, -7.71478241e-08, 0.999641657, 3.04736965e-08, -0.0267685894)
+        
+		wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(555.762329, 15.9995508, -401.1409, 0.0255593769, -3.38008306e-08, -0.999673307, -9.45388834e-09, 1, -3.40535919e-08, 0.999673307, 1.03211883e-08, 0.0255593769)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-584.098694, -33.5398941, -790.030823, 0.9995839, -8.18823942e-09, -0.028844459, 6.1261729e-09, 1, -7.15775457e-08, 0.028844459, 7.13710548e-08, 0.9995839)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-579.846313, -33.4783249, -790.45575, 0.998628438, 1.07651958e-08, -0.0523571409, -1.02785016e-08, 1, 9.56492574e-09, 0.0523571409, -9.01365382e-09, 0.998628438)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-576.338196, -33.4783249, -790.768738, 0.999962091, -7.6095491e-10, 0.00870798156, 5.24863042e-10, 1, 2.7114412e-08, -0.00870798156, -2.71088147e-08, 0.999962091)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-572.858276, -33.4783249, -790.798584, 0.996915281, -3.22584697e-08, -0.0784853026, 2.57610626e-08, 1, -8.37975307e-08, 0.0784853026, 8.15171717e-08, 0.996915281)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-569.380371, -33.4939194, -790.529053, 1, -3.08257526e-08, -1.80162333e-05, 3.0823692e-08, 1, -1.14315156e-07, 1.80162333e-05, 1.14314595e-07, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-565.098206, -33.4783249, -790.529053, 1, 1.01013709e-09, -1.80162333e-05, -1.01006958e-09, 1, 3.74595777e-09, 1.80162333e-05, -3.74593956e-09, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-561.524109, -33.4783249, -790.529053, 1, -2.78409615e-08, -1.80162333e-05, 2.78391017e-08, 1, -1.03244751e-07, 1.80162333e-05, 1.03244247e-07, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-557.78363, -28.5025578, -790.114014, 0.999961495, -3.20367164e-08, -0.00877411943, 3.25173524e-08, 1, 5.4636331e-08, 0.00877411943, -5.49195391e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-553.968018, -28.5025578, -790.079895, 0.999961495, 1.7313214e-08, -0.00877411943, -1.75729049e-08, 1, -2.95202902e-08, 0.00877411943, 2.96733393e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-553.968018, -28.5025578, -790.079895, 0.999961495, 4.9508543e-08, -0.00877411943, -5.02511455e-08, 1, -8.44152126e-08, 0.00877411943, 8.48528714e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-546.709778, -28.4783134, -790.946594, 0.996924758, -2.42664555e-09, 0.078364566, 1.11142129e-09, 1, 1.68270198e-08, -0.078364566, -1.6688178e-08, 0.996924758)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-542.972961, -28.5025578, -790.27887, 0.999045134, 5.7619548e-11, -0.0436902903, 4.60932847e-09, 1, 1.06718147e-07, 0.0436902903, -1.0681763e-07, 0.999045134)
+	 	wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-539.411682, -28.5025578, -790.364868, 0.997566104, -5.72797099e-08, 0.0697274581, 5.67187683e-08, 1, 1.00246185e-08, -0.0697274581, -6.04536377e-09, 0.997566104)
+		wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-536.588623, -28.4783134, -790.553711, 0.998136759, 1.53601789e-08, 0.0610169657, -1.51676982e-08, 1, -3.61771102e-09, -0.0610169657, 2.68548339e-09, 0.998136759)
+		wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-533.049194, -28.4783134, -790.919006, 0.991447806, -1.4653156e-08, 0.130503863, 1.47177586e-08, 1, 4.69464467e-10, -0.130503863, 1.45527479e-09, 0.991447806)
+		wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-529.214478, -28.4783134, -791.022217, 0.998630524, 3.92588611e-08, 0.0523171574, -4.16940793e-08, 1, 4.54557707e-08, -0.0523171574, -4.75748365e-08, 0.998630524)
+
+
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.257, 16.0827, -359.66)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.279541, 16.2249069, -365.342407, 0.998309791, -4.08107725e-09, -0.0581171513, 9.91166704e-09, 1, 1.00036509e-07, 0.0581171513, -1.00443458e-07, 0.998309791)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.231995, 16.3084679, -372.018799, 0.99963367, 2.12537166e-09, 0.027065495, -2.92868219e-09, 1, 2.96406011e-08, -0.027065495, -2.97090086e-08, 0.99963367)
+
+        
+    end 
+else
+
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end
+end    
+})
+
+local Section = Farms:AddSection({
+	Name = "Prestige"
+})
+
+Farms:AddToggle({
+	Name = "Prestige Farm",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+
+		 while true do
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.1)
+       game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(539.735535, 16.0355186, -401.036957, 0.0257705692, -9.52443742e-08, -0.999667883, -4.22824691e-08, 1, -9.63660227e-08, 0.999667883, 4.47518325e-08, 0.0257705692)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(542.009521, 15.9995508, -401.095673, 0.0257710461, -4.92774266e-09, -0.999667883, -2.1876978e-09, 1, -4.98577801e-09, 0.999667883, 2.31546005e-09, 0.0257710461)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(543.584717, 15.9995508, -401.117096, 0.0431915708, -5.83758464e-08, -0.99906683, -1.11293668e-08, 1, -5.89115174e-08, 0.99906683, 1.36634624e-08, 0.0431915708)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(545.593872, 15.9995508, -400.999603, 0.00829338934, 2.559878e-08, -0.999965608, -2.72869531e-08, 1, 2.53733514e-08, 0.999965608, 2.70755844e-08, 0.00829338934)
+       	wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(547.996765, 15.9995508, -401.264954, -0.0615469962, -4.52663294e-08, -0.998104215, -2.0298371e-08, 1, -4.41006307e-08, 0.998104215, 1.75456289e-08, -0.0615469962)
+       	wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(549.990479, 15.9995508, -401.065094, 0.0168865006, -6.80622714e-09, -0.999857426, -3.60191599e-10, 1, -6.81328105e-09, 0.999857426, 4.75192719e-10, 0.0168865006)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(551.827576, 15.9995508, -401.096039, -0.0616319366, -6.62826736e-08, -0.998098969, -2.69230203e-08, 1, -6.47464447e-08, 0.998098969, 2.28813892e-08, -0.0616319366)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(553.925659, 15.9995508, -401.039825, -0.0267685894, -7.79915084e-08, -0.999641657, -3.25504992e-08, 1, -7.71478241e-08, 0.999641657, 3.04736965e-08, -0.0267685894)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(555.762329, 15.9995508, -401.1409, 0.0255593769, -3.38008306e-08, -0.999673307, -9.45388834e-09, 1, -3.40535919e-08, 0.999673307, 1.03211883e-08, 0.0255593769)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(558.122864, 15.9995508, -401.185852, 0.0603943951, -2.59569912e-08, -0.998174608, 1.18075164e-07, 1, -1.88603426e-08, 0.998174608, -1.16720564e-07, 0.0603943951)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(560.1698, 15.9995527, -401.000763, -0.0616622977, 9.29008621e-08, -0.998097062, -2.09124038e-10, 1, 9.30908968e-08, 0.998097062, 5.94892491e-09, -0.0616622977)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(561.825806, 15.9995527, -400.970764, -0.0477017127, -1.86173601e-08, -0.998861611, -6.05193229e-09, 1, -1.83495619e-08, 0.998861611, 5.16973753e-09, -0.0477017127)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(563.574707, 15.9995508, -401.030731, -0.00217322353, -6.18378593e-08, -0.999997616, 6.366633e-09, 1, -6.18518428e-08, 0.999997616, -6.50103615e-09, -0.00217322353)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(566.018005, 15.9995508, -401.151764, 0.0223046467, 4.14199484e-08, -0.99975121, 9.04616648e-09, 1, 4.16320773e-08, 0.99975121, -9.97250549e-09, 0.0223046467)
+        wait(0.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(553.925659, 15.9995508, -401.039825, -0.0267685894, -7.79915084e-08, -0.999641657, -3.25504992e-08, 1, -7.71478241e-08, 0.999641657, 3.04736965e-08, -0.0267685894)
+        
+		wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(555.762329, 15.9995508, -401.1409, 0.0255593769, -3.38008306e-08, -0.999673307, -9.45388834e-09, 1, -3.40535919e-08, 0.999673307, 1.03211883e-08, 0.0255593769)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-584.098694, -33.5398941, -790.030823, 0.9995839, -8.18823942e-09, -0.028844459, 6.1261729e-09, 1, -7.15775457e-08, 0.028844459, 7.13710548e-08, 0.9995839)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-579.846313, -33.4783249, -790.45575, 0.998628438, 1.07651958e-08, -0.0523571409, -1.02785016e-08, 1, 9.56492574e-09, 0.0523571409, -9.01365382e-09, 0.998628438)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-576.338196, -33.4783249, -790.768738, 0.999962091, -7.6095491e-10, 0.00870798156, 5.24863042e-10, 1, 2.7114412e-08, -0.00870798156, -2.71088147e-08, 0.999962091)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-572.858276, -33.4783249, -790.798584, 0.996915281, -3.22584697e-08, -0.0784853026, 2.57610626e-08, 1, -8.37975307e-08, 0.0784853026, 8.15171717e-08, 0.996915281)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-569.380371, -33.4939194, -790.529053, 1, -3.08257526e-08, -1.80162333e-05, 3.0823692e-08, 1, -1.14315156e-07, 1.80162333e-05, 1.14314595e-07, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-565.098206, -33.4783249, -790.529053, 1, 1.01013709e-09, -1.80162333e-05, -1.01006958e-09, 1, 3.74595777e-09, 1.80162333e-05, -3.74593956e-09, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-561.524109, -33.4783249, -790.529053, 1, -2.78409615e-08, -1.80162333e-05, 2.78391017e-08, 1, -1.03244751e-07, 1.80162333e-05, 1.03244247e-07, 1)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-557.78363, -28.5025578, -790.114014, 0.999961495, -3.20367164e-08, -0.00877411943, 3.25173524e-08, 1, 5.4636331e-08, 0.00877411943, -5.49195391e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-553.968018, -28.5025578, -790.079895, 0.999961495, 1.7313214e-08, -0.00877411943, -1.75729049e-08, 1, -2.95202902e-08, 0.00877411943, 2.96733393e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-553.968018, -28.5025578, -790.079895, 0.999961495, 4.9508543e-08, -0.00877411943, -5.02511455e-08, 1, -8.44152126e-08, 0.00877411943, 8.48528714e-08, 0.999961495)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-546.709778, -28.4783134, -790.946594, 0.996924758, -2.42664555e-09, 0.078364566, 1.11142129e-09, 1, 1.68270198e-08, -0.078364566, -1.6688178e-08, 0.996924758)
+        wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-542.972961, -28.5025578, -790.27887, 0.999045134, 5.7619548e-11, -0.0436902903, 4.60932847e-09, 1, 1.06718147e-07, 0.0436902903, -1.0681763e-07, 0.999045134)
+	 	wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-539.411682, -28.5025578, -790.364868, 0.997566104, -5.72797099e-08, 0.0697274581, 5.67187683e-08, 1, 1.00246185e-08, -0.0697274581, -6.04536377e-09, 0.997566104)
+		wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-536.588623, -28.4783134, -790.553711, 0.998136759, 1.53601789e-08, 0.0610169657, -1.51676982e-08, 1, -3.61771102e-09, -0.0610169657, 2.68548339e-09, 0.998136759)
+		wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-533.049194, -28.4783134, -790.919006, 0.991447806, -1.4653156e-08, 0.130503863, 1.47177586e-08, 1, 4.69464467e-10, -0.130503863, 1.45527479e-09, 0.991447806)
+		wait(0.001)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-529.214478, -28.4783134, -791.022217, 0.998630524, 3.92588611e-08, 0.0523171574, -4.16940793e-08, 1, 4.54557707e-08, -0.0523171574, -4.75748365e-08, 0.998630524)
+
+
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.257, 16.0827, -359.66)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.279541, 16.2249069, -365.342407, 0.998309791, -4.08107725e-09, -0.0581171513, 9.91166704e-09, 1, 1.00036509e-07, 0.0581171513, -1.00443458e-07, 0.998309791)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.231995, 16.3084679, -372.018799, 0.99963367, 2.12537166e-09, 0.027065495, -2.92868219e-09, 1, 2.96406011e-08, -0.027065495, -2.97090086e-08, 0.99963367)
+        wait(0.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.193665, 16.2516136, -378.455505, 0.999953568, -2.12320272e-09, 0.00963399187, 2.27714625e-09, 1, -1.59682312e-08, -0.00963399187, 1.59894284e-08, 0.999953568)
+
+        
+    end 
+else
+
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end
+end    
+})
+
+local Section = Farms:AddSection({
+	Name = "Super Prestige"
+})
+
+Farms:AddToggle({
+	Name = "Super Prestige Farm",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+
+		 while true do
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.257, 16.0827, -359.66)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.279541, 16.2249069, -365.342407, 0.998309791, -4.08107725e-09, -0.0581171513, 9.91166704e-09, 1, 1.00036509e-07, 0.0581171513, -1.00443458e-07, 0.998309791)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.231995, 16.3084679, -372.018799, 0.99963367, 2.12537166e-09, 0.027065495, -2.92868219e-09, 1, 2.96406011e-08, -0.027065495, -2.97090086e-08, 0.99963367)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.193665, 16.2516136, -378.455505, 0.999953568, -2.12320272e-09, 0.00963399187, 2.27714625e-09, 1, -1.59682312e-08, -0.00963399187, 1.59894284e-08, 0.999953568)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.285828, 16.2242565, -384.121735, 0.999646187, 1.98707948e-08, -0.026599599, -1.8523151e-08, 1, 5.09104332e-08, 0.026599599, -5.03997128e-08, 0.999646187)
+
+        
+    end 
+else
+
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end
+end    
+})
+
+local Section = Farms:AddSection({
+	Name = "Mega Prestige"
+})
+
+Farms:AddToggle({
+	Name = "Mega Prestige Farm",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+
+		 while true do
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.257, 16.0827, -359.66)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.279541, 16.2249069, -365.342407, 0.998309791, -4.08107725e-09, -0.0581171513, 9.91166704e-09, 1, 1.00036509e-07, 0.0581171513, -1.00443458e-07, 0.998309791)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.231995, 16.3084679, -372.018799, 0.99963367, 2.12537166e-09, 0.027065495, -2.92868219e-09, 1, 2.96406011e-08, -0.027065495, -2.97090086e-08, 0.99963367)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.193665, 16.2516136, -378.455505, 0.999953568, -2.12320272e-09, 0.00963399187, 2.27714625e-09, 1, -1.59682312e-08, -0.00963399187, 1.59894284e-08, 0.999953568)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.285828, 16.2242565, -384.121735, 0.999646187, 1.98707948e-08, -0.026599599, -1.8523151e-08, 1, 5.09104332e-08, 0.026599599, -5.03997128e-08, 0.999646187)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(523.996887, 16.2242565, -390.206726, 0.999980807, 2.48070386e-09, 0.00619528396, -2.50892085e-09, 1, 4.54681626e-09, -0.00619528396, -4.56227278e-09, 0.999980807)
+
+        
+    end 
+else
+
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end
+end    
+})
+
+local Section = Farms:AddSection({
+	Name = "Hyper"
+})
+
+Farms:AddToggle({
+	Name = "Hyper Farm",
+	Default = false,
+	Callback = function(Value)
+		if Value then
+
+		 while true do
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(537.464, 16.0099, -401.80)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.257, 16.0827, -359.66)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.279541, 16.2249069, -365.342407, 0.998309791, -4.08107725e-09, -0.0581171513, 9.91166704e-09, 1, 1.00036509e-07, 0.0581171513, -1.00443458e-07, 0.998309791)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.231995, 16.3084679, -372.018799, 0.99963367, 2.12537166e-09, 0.027065495, -2.92868219e-09, 1, 2.96406011e-08, -0.027065495, -2.97090086e-08, 0.99963367)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.193665, 16.2516136, -378.455505, 0.999953568, -2.12320272e-09, 0.00963399187, 2.27714625e-09, 1, -1.59682312e-08, -0.00963399187, 1.59894284e-08, 0.999953568)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.285828, 16.2242565, -384.121735, 0.999646187, 1.98707948e-08, -0.026599599, -1.8523151e-08, 1, 5.09104332e-08, 0.026599599, -5.03997128e-08, 0.999646187)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(523.996887, 16.2242565, -390.206726, 0.999980807, 2.48070386e-09, 0.00619528396, -2.50892085e-09, 1, 4.54681626e-09, -0.00619528396, -4.56227278e-09, 0.999980807)
+        wait(0.1)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.006042, 16.1434078, -397.249664, 0.99990356, 8.01868794e-09, 0.0138860876, -6.82564227e-09, 1, -8.59640323e-08, -0.0138860876, 8.5860961e-08, 0.99990356)
+
+        
+    end 
+else
+
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+	end
+end    
+})
+
+
+local Teleport = Window:MakeTab({
+	Name = "Teleports",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+
+
+
+
+
+
+
+Teleport:AddLabel("Teleports")
+
+local Section = Teleport:AddSection({
+	Name = "Teleports"
+})
+
+Teleport:AddButton({
+
+	Name = "VIP TP",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(408.699982, 15.271656, 247.075058, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+
+
+
+Teleport:AddButton({
+
+	Name = "Spawn",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(24.9519997, 11.5550003, -5.98400021, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+Teleport:AddButton({
+
+	Name = "Brick Land",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-556.000061, -26.3499813, -758.350037, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+Teleport:AddButton({
+
+	Name = "Desert Land",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-33.4801331, -30.9797115, 959.250061, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+Teleport:AddButton({
+
+	Name = "Ice Land",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-780.880127, -30.9797115, 1061.05005, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+Teleport:AddButton({
+
+	Name = "Slate Land",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1752.4801, -17.7797108, 736.349976, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+Teleport:AddButton({
+
+	Name = "Wood Land",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1449.18005, 4.32028866, 45.0499763, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+
+Teleport:AddButton({
+
+	Name = "Metal Land",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1407.68018, -9.07971096, 683.250061, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+
+Teleport:AddButton({
+
+	Name = "LeaderBoard",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-441.400055, 20.4320698, 117.175003, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+
+
+
+
+Teleport:AddButton({
+
+	Name = "100K Visit",
+	Callback = function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(550.635315, 18.1998177, -372.863861, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+	end
+
+
+})
+
